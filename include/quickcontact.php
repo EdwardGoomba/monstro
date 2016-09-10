@@ -5,8 +5,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'edwardvdanilyuk@gmail.com', // Your Email Address
-				'name' => 'Edward V Danilyuk' // Your Name
+				'email' => 'ask@monstrohosting.com', // Your Email Address
+				'name' => 'Monstro Hosting' // Your Name
 			);
 
 // Form Processing Messages
