@@ -23,7 +23,6 @@
 	- Content
 	- Portfolio
 	- Blog
-	- Shop
 	- Events
 	- Shortcodes
 		- Countdown
@@ -68,7 +67,6 @@
 		- Newsletter
 		- Twitter Feed
 		- Navigation Tree
-	- Wedding
 	- Bootstrap Specific
 	- Cookie Notification
 	- Stretched Layout
@@ -133,7 +131,7 @@ body {
 
 a {
 	text-decoration: none !important;
-	color: #547980;
+	color: #FA6900;
 }
 
 a:hover { color: #594F4F; }
@@ -156,7 +154,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #444;
+	color: #F38630;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
@@ -366,11 +364,11 @@ span.middot {
 }
 
 .bgcolor,
-.bgcolor #header-wrap { background-color: #1ABC9C !important; }
+.bgcolor #header-wrap { background-color: #69D2E7 !important; }
 
 .color { color: #1ABC9C !important; }
 
-.border-color { border-color: #1ABC9C !important; }
+.border-color { border-color: #69D2E7 !important; }
 
 .nobg { background: none !important; }
 
@@ -1111,7 +1109,7 @@ body.stretched #header.full-header .container {
 	display: block;
 	line-height: 22px;
 	padding: 39px 15px;
-	color: #444;
+	color: #FA6900;
 	font-weight: bold;
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -1140,7 +1138,7 @@ body.stretched #header.full-header .container {
 }
 
 #primary-menu ul li:hover > a,
-#primary-menu ul li.current > a { color: #547980; }
+#primary-menu ul li.current > a { color: #69D2E7; }
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
@@ -1619,123 +1617,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 	-o-transform: translateY(0);
 	transform: translateY(0);
 }
-
-}
-
-
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
-
-
-#top-search,
-#top-cart,
-#side-panel-trigger {
-	float: right;
-	margin: 40px 0 40px 15px;
-}
-
-#top-cart { position: relative; }
-
-#top-search a,
-#top-cart a,
-#side-panel-trigger a {
-	display: block;
-	position: relative;
-	width: 14px;
-	height: 14px;
-	font-size: 14px;
-	line-height: 20px;
-	text-align: center;
-	color: #333;
-	-webkit-transition: color .3s ease-in-out;
-	-o-transition: color .3s ease-in-out;
-	transition: color .3s ease-in-out;
-}
-
-#top-search a { z-index: 11; }
-
-#top-search a i {
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-transition: opacity .3s ease;
-	-o-transition: opacity .3s ease;
-	transition: opacity .3s ease;
-}
-
-body.top-search-open #top-search a i.icon-search3,
-#top-search a i.icon-line-cross { opacity: 0; }
-
-body.top-search-open #top-search a i.icon-line-cross {
-	opacity: 1;
-	z-index: 11;
-	font-size: 16px;
-}
-
-#top-cart a:hover { color: #1ABC9C; }
-
-#top-search form {
-	opacity: 0;
-	z-index: -2;
-	position: absolute;
-	width: 100% !important;
-	height: 100% !important;
-	padding: 0 15px;
-	margin: 0;
-	top: 0;
-	left: 0;
-	-webkit-transition: opacity .3s ease-in-out;
-	-o-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
-}
-
-body.top-search-open #top-search form {
-	opacity: 1;
-	z-index: 10;
-}
-
-#top-search form input {
-	box-shadow: none !important;
-	pointer-events: none;
-	border-radius: 0;
-	border: 0;
-	outline: 0 !important;
-	font-size: 32px;
-	padding: 10px 80px 10px 0;
-	height: 100%;
-	background-color: transparent;
-	color: #333;
-	font-weight: 700;
-	margin-top: 0 !important;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: 2px;
-}
-
-body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.full-header #top-search form input { padding-left: 40px; }
-
-body:not(.device-sm):not(.device-xs):not(.device-xxs) .container-fullwidth #top-search form input { padding-left: 60px; }
-
-body.top-search-open #top-search form input { pointer-events: auto; }
-
-body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header:not(.sticky-header):not(.full-header):not(.floating-header) #top-search form input { border-bottom: 2px solid rgba(0,0,0,0.1); }
-
-#top-search form input::-moz-placeholder {
-	color: #555;
-	opacity: 1;
-	text-transform: uppercase;
-}
-#top-search form input:-ms-input-placeholder {
-	color: #555;
-	text-transform: uppercase;
-}
-#top-search form input::-webkit-input-placeholder {
-	color: #555;
-	text-transform: uppercase;
-}
-
-#primary-menu .container #top-search form input,
-.sticky-header #top-search form input { border: none !important; }
 
 /* ----------------------------------------------------------------
 	Sticky Header
@@ -5797,7 +5678,7 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	font-size: 14px;
 	height: 40px;
 	line-height: 40px;
-	background-color: #1ABC9C;
+	background-color: #F38630;
 	color: #FFF;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -6218,6 +6099,13 @@ body:not(.device-touch) .button.button-full strong {
 .button-seablue { background-color: #45ADA8; }
 .button-3d.button-seablue:hover,
 .button-reveal.button-seablue:hover { background-color: #45ADA8 !important; }
+
+/* Based on Goldfish */
+
+.button-orange { background-color: #FA6900; }
+.button-3d.button-orange:hover,
+.button-reveal.button-orange:hover { background-color: #F38630 !important; }
+
 /* Buttons - No Hover
 -----------------------------------------------------------------*/
 
@@ -6497,7 +6385,7 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box .fbox-icon i,
 .feature-box .fbox-icon img {
 	border-radius: 50%;
-	background-color: #547980;
+	background-color: #F38630;
 }
 
 .feature-box .fbox-icon i {
@@ -6513,7 +6401,7 @@ body:not(.device-touch) .button.button-full strong {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 0;
-	color: #333;
+	color: #F38630;
 }
 
 .feature-box p {
@@ -6660,7 +6548,7 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box.fbox-plain .fbox-icon img {
 	border: none !important;
 	background-color: transparent !important;
-	color: #1ABC9C;
+	color: #69D2E7;
 	border-radius: 0;
 }
 
@@ -6922,7 +6810,7 @@ body:not(.device-touch) .button.button-full strong {
 	top: -3px;
 	left: -3px;
 	padding: 3px;
-	box-shadow: 0 0 0 2px #333;
+	box-shadow: 0 0 0 2px #69D2E7;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	-webkit-transform: scale(.8);
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
@@ -6935,7 +6823,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .fbox-effect .fbox-icon i:hover,
 .fbox-effect:hover .fbox-icon i {
-	background-color: #594F4F;
+	background-color: #A7DBD8;
 	color: #FFF;
 }
 
@@ -9042,7 +8930,7 @@ body:not(.device-touch) .team-overlay {
 .pricing-box.best-price .pricing-title h3 { font-size: 22px; }
 
 .pricing-box.best-price .pricing-price {
-	color: #1ABC9C;
+	color: #FA6900;
 	font-size: 72px;
 }
 
@@ -10094,7 +9982,7 @@ label.error { display: none !important; }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #594F4F;
+	color: #69D2E7;
 }
 
 .emphasis-title h1,
@@ -10514,7 +10402,7 @@ body:not(.device-touch) #gotoTop {
 
 .stretched #gotoTop { bottom: 30px; }
 
-#gotoTop:hover { background-color: #1ABC9C; }
+#gotoTop:hover { background-color: #F38630; }
 
 
 /* ----------------------------------------------------------------
@@ -10831,7 +10719,7 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
+	background-color: #E0E4CC;
 	font-size: 14px;
 	line-height: 1.8;
 }
@@ -10853,7 +10741,7 @@ button.toast-close-button {
 }
 
 .copyright-links a:hover {
-	color: #555;
+	color: #FA6900;
 	border-bottom: 1px solid #666;
 }
 
@@ -11216,52 +11104,6 @@ body:not(.device-touch) .tagcloud a {
 .nav-tree ul ul ul a { padding-left: 40px; }
 .nav-tree ul ul ul ul a { padding-left: 60px; }
 .nav-tree ul ul ul ul ul a { padding-left: 80px; }
-
-/* ----------------------------------------------------------------
-	34. Wedding
------------------------------------------------------------------*/
-
-
-.wedding-head {
-	position: relative;
-	line-height: 1;
-	font-size: 80px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-}
-
-.wedding-head .first-name,
-.wedding-head .last-name,
-.wedding-head .and {
-	display: inline-block;
-	margin-right: 15px;
-	font-weight: bold;
-	text-align: right;
-	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: 2px;
-}
-
-.wedding-head .last-name {
-	margin: 0 0 0 15px;
-	text-align: left;
-}
-
-.wedding-head .first-name span,
-.wedding-head .last-name span {
-	display: block;
-	margin-top: 10px;
-	font-size: 56px;
-	font-weight: 400;
-	font-style: italic;
-	font-family: 'Crete Round', serif;
-	text-transform: none;
-}
-
-.wedding-head .and {
-	margin: 0;
-	font-size: 200px;
-	font-family: 'Times New Roman', serif;
-}
 
 /* ----------------------------------------------------------------
 	35. Bootstrap Specific
